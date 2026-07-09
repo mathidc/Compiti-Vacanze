@@ -1,0 +1,14 @@
+.cella{
+    width: 30px;
+    height: 50px;
+    background-color: yellow;
+    margin: 10px;
+    border: none;
+
+}
+
+#campo{
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+    border: solid 2px blue;
+}

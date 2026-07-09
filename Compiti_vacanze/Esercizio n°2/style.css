@@ -1,0 +1,31 @@
+#btnAvvia{
+    width: 100%;
+}
+
+#giocoMatriciale{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+}
+
+.cella{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: none;
+}
+
+.buttonGiocatore1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+}
+
+.buttonGiocatore2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#campo{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.semaforo{
+    width: 75px;
+    height: 75px;
+    border-radius: 200px;
+    background-color: gray;
+    border: none;
+}

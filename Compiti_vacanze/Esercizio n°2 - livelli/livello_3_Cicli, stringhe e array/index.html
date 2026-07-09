@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Livello 3</h1>
+    <div class="container">
+        <h3>Tabellina</h3>
+        <input type="number" id="inputTabellina" class="form-control mb-2">
+        <button class="btn btn-primary" onclick="svolgiTabelline()">Calcola la tabellina</button>
+        <div id="campoTabelline"></div>
+
+        <h3>Lista dinamica</h3>
+        <input type="text" class="form-control mb-2" placeholder="inserisci qualcosa" id="inputElemento">
+        <button class="btn btn-primary mb-2" onclick="aggiungiElementi()">Aggiungi</button>
+        <ul id="campo" class="list-group"></ul>
+
+        <h3>Conta elementi colpiti</h3>
+        <button class="btn btn-primary" onclick="contaColpiti()">Conta colpiti</button>
+        <p id="campoElementi" class="fw-bold"></p>
+
+        <h3>Ricerca in un array</h3>
+        <input type="text" placeholder="Inserisci delle città" class="form-control" id="inputCitta">
+        <button class="btn btn-primary m-2" onclick="ControllaCitta()">Controlla</button>
+        <p id="campoCitta" class="fw-bold"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

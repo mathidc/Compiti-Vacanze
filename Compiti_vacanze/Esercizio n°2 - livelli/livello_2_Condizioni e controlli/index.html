@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Livello 2</h1>
+
+    <div class="container">
+        <h3>Controllo numero</h3>
+        <input type="number" placeholder="Inserisci un numero" class="form-control mb-2" id="num1">
+        <button class="btn btn-primary" onclick="controlla()">Controlla</button>
+        <p id="ris1" class="fw-bold"></p>
+
+        <h3>Pari o dispari</h3>
+        <input type="number" placeholder="Inserisci un numero" class="form-control mb-2" id="num2">
+        <button class="btn btn-primary" onclick="indicaPariDispari()">Verifica</button>
+        <p id="ris2" class="fw-bold"></p>
+
+        <h3>Indovina il numero</h3>
+        <input type="number" placeholder="Prova ad indovinarte il numero" id="num3" class="form-control mb-2">
+        <button class="btn btn-primary" onclick="verifica()">Tenta la fortuna</button>
+        <p>Tentativi rimanenti: <p id="idTentativi">5</p></p>
+        <p id="idAiuto"></p>
+
+        <h3>Validazione semplice di un form</h3>
+        <form class="needs-validation">
+            <div class="mb-2">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="es: Mario Rossi">
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="es: esempio@gmail.com">
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Messaggio</label>
+                <input type="text" class="form-control" id="inputMessaggio" placeholder="es: ciao, come stai?">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="controllaErrori()">Controlla</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

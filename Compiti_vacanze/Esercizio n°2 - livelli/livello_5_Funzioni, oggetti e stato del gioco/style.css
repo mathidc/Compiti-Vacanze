@@ -1,0 +1,23 @@
+.campoGioco {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.celle{
+    background-color: darkgray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.cellaCliccata{
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    pointer-events: none;
+}
