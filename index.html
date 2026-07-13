@@ -32,7 +32,7 @@
     <div class="container text-center d-flex flex-column align-items-center bg-light">
         <h3>Buongiorno Luca</h3>
         <img src="img/profilo.jpg" alt="fotoLuca" class="w-25 rounded-circle">
-        <h3>Venerdì 21 maggio <p>10:00:00</p></h3>
+        <h3>Venerdì 21 maggio <div class="d-flex text-center"><p>10</p>:<p id="min">00</p>:<p id="sec">00</p></div></h3>
         <button class="btn btn-outline-primary"
                     data-bs-toggle="modal"
                     data-bs-target="#consiglio">
@@ -81,12 +81,13 @@
 
     <div class="container bg-light">
         <div class="d-flex">
-            <h1>Temperatura: <h1>18.0  C</h1></h1>
+            <h1>Temperatura: <h1 id="Temperatura">18.0 °C</h1></h1>
         </div>
         
         <button class="btn btn-warning">Attiva Controllo</button>
         <button class="btn btn-danger">Stoppa Controllo</button>
-        <div></div>
+        <div id="divColorato"></div>
+        <div id="allerta" ></div>
     </div>
     
     <script src="script.js"></script>
