@@ -1,0 +1,11 @@
+#header{
+    background-color: blueviolet !important;
+    color: white !important;
+}
+
+#head{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(181, 136, 223);
+    color: white;
+}
