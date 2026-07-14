@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-warning navbar-expand-lg bg-warning">
+            <div class="container">
+                <span class="navbar-brand">VERIFICA 3E - Casa Domotica</span>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a href="index.html" class="nav-link text-dark">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toogle text-dark" data-bs-toggle="dropdown">
+                            Componenti
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Componenti.html" class="dropdown-item">Dispositivi e Temperatura</a></li>
+                            <li><a href="Componenti.html" class="dropdown-item">Storico eventi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container" id="contenitore">
+
+    </div>
+
+    <div class="container">
+        <h1>Nuovo Dispositivo</h1>
+        <form>
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" placeholder="Es. Tapparelle" id="nome">
+            <label class="form-label">Data</label>
+            <input type="date" class="form-control" id="data">
+            <label class="form-label">Nome</label>
+            <select class="form-select" id="opzione">
+                <option value="clima">CLIMA</option>
+                <option value="luce">LUCE</option>
+                <option value="porta">PORTA</option>
+            </select>
+            <button class="btn btn-success" id="btnAggiungi">Aggiungi dispositivoS</button>
+        </form>
+    </div>
+
+    <script src="componenti.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
