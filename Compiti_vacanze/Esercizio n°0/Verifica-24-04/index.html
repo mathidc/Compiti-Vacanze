@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Stelle Cadenti</title>
+    <link rel="stylesheet" href="css/index.css">    
+</head>
+<body>
+    <h1>Stelle Cadenti</h1>
+    <p id="pannello">
+        Punteggio: <span id="spnPunteggio">0</span>
+        &nbsp;&nbsp;&nbsp;
+        Tempo: <span id="spnTimer">30</span> s
+    </p>
+    <p>
+        <button id="btnStart" onclick="avviaGioco()">Inizia partita</button>
+        <button id="btnStop" disabled onclick="fermaGioco()">Stop</button>
+    </p>
+    <div id="campo"></div>
+    <p id="risultato"></p>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

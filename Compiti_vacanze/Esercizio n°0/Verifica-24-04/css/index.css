@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #0a0a1a;
+    color: #e0e0ff;
+}
+
+h1 {
+    margin-bottom: 8px;
+    color: #ffe566;
+    text-shadow: 0 0 10px rgba(255, 220, 50, 0.6);
+}
+
+#pannello {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+#btnStart {
+    font-size: 16px;
+    padding: 8px 24px;
+    cursor: pointer;
+    background: #1a3a6a;
+    color: #e0e0ff;
+    border: 2px solid #4466aa;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#btnStart:hover:not(:disabled) {
+    background: #2a5a9a;
+}
+
+#btnStop {
+    font-size: 16px;
+    padding: 8px 24px;
+    cursor: pointer;
+    background: #6a1a1a;
+    color: #ffd0d0;
+    border: 2px solid #cc3333;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#btnStop:hover:not(:disabled) {
+    background: #991f1f;
+    box-shadow: 0 0 10px rgba(220, 50, 50, 0.7);
+}
+
+#btnStop:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#campo {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 2px solid #334;
+    border-radius: 8px;
+    background: radial-gradient(ellipse at center, #0d1b3e 0%, #020810 100%);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#risultato {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffe566;
+    text-shadow: 0 0 10px rgba(255, 220, 50, 0.7);
+    min-height: 32px;
+    margin: 10px 0;
+}
+
+/* Le stelle vengono create dinamicamente in JS */
+.stella {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.stella:hover {
+    filter: brightness(1.4) drop-shadow(0 0 6px rgba(255, 255, 160, 0.9));
+}
+
+/* Le bombe vengono create dinamicamente in JS*/
+.bomba {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, #ff4444, #880000);
+    box-shadow: 0 0 8px 4px rgba(200, 0, 0, 0.6);
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.bomba:hover {
+    box-shadow: 0 0 14px 7px rgba(255, 60, 60, 0.9);
+}
