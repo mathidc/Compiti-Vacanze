@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=ù, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,6 +21,68 @@
             </div>
         </div>
     </nav>
-    
+
+    <div class="container">
+        <div class="container d-flex direction-column">
+            <h3 class="text-primary">📷 Contattaci</h3>
+            <p>Compila il nostro form per richiedere informazioni. Scegli il giorno e l'orario preferito per essere ricontattato!</p>
+        </div>
+        <div class="container">
+            <form>
+                <label class="form-label">Nome Completo*:</label>
+                <input type="text" class="form-control" placeholder="Mario Rossi">
+                <label class="form-label">Email*:</label>
+                <input type="email" class="form-control" placeholder="mariorossi@example.com">
+                <label class="form-label">Telefono (facoltativo):</label>
+                <input type="tel" class="form-control" placeholder="+39 123 456 7890">
+                <label class="form-label">Data preferita per essere ricontattato:</label>
+                <input type="date" class="form-control">
+                <label class="form-label">Fascia oraria preferita:</label>
+                <div class="form-check bg-secondary rounded-4 p-2">
+                    <input class="form-check-input" type="radio" name="orario" value="mattina">
+                    <label class="form-check-label" for="mattina">Mattina (9:00 - 12:00)</label>
+                </div>
+                <div class="form-check bg-secondary rounded-4 p-2">
+                    <input class="form-check-input" type="radio" name="orario" value="PausaPranzo">
+                    <label class="form-check-label" for="PausaPranzo">Pausa pranzo (12:00 - 14:00)</label>
+                </div>
+                <div class="form-check bg-secondary rounded-4 p-2">
+                    <input class="form-check-input" type="radio" name="orario" value="pomeriggio">
+                    <label class="form-check-label" for="pomeriggio">Pomeriggio (14:00 - 18:00)</label>
+                </div>
+                <div class="form-check bg-secondary rounded-4 p-2">
+                    <input class="form-check-input" type="radio" name="orario" value="sera">
+                    <label class="form-check-label  " for="sera">Sera (18:00 - 20:00)</label>
+                </div>
+                <label class="form-label">A quali hobby sei interessato?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="lettura">
+                    <label class="form-check-label" for="lettura">📚 Lettura</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="musica">
+                    <label class="form-check-label" for="musica">📘 Musica</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="cucina">
+                    <label class="form-check-label" for="cucina">🍳 Cucina</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="sport">
+                    <label class="form-check-label" for="sport">⚽ Sport</label>
+                </div>
+                <label class="form-label">Messaggio:</label>
+                <div data-mdb-input-init class="form-outline">
+                    <textarea class="form-control" id="textAreaExample1" rows="4" placeholder="Scrivi il tuo Messaggio..."></textarea>
+                </div>
+                <button class="btn btn-primary w-100 m-3 rounded-5">🎥 Invia richiesta</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

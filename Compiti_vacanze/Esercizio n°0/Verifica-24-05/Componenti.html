@@ -37,18 +37,37 @@
     <div class="container">
         <h1>Nuovo Dispositivo</h1>
         <form>
-            <label class="form-label">Nome</label>
-            <input type="text" class="form-control" placeholder="Es. Tapparelle" id="nome">
-            <label class="form-label">Data</label>
-            <input type="date" class="form-control" id="data">
-            <label class="form-label">Nome</label>
-            <select class="form-select" id="opzione">
-                <option value="clima">CLIMA</option>
-                <option value="luce">LUCE</option>
-                <option value="porta">PORTA</option>
-            </select>
-            <button class="btn btn-success" id="btnAggiungi">Aggiungi dispositivoS</button>
+            <div class="d-flex">
+                <div class="m-5">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" placeholder="Es. Tapparelle" id="nome">
+                </div>
+                <div class="m-5">
+                    <label class="form-label">Data</label>
+                    <input type="date" class="form-control" id="data">
+                </div>
+                <div class="m-5">
+                    <label class="form-label">Nome</label>
+                    <select class="form-select" id="opzione">
+                        <option value="clima">CLIMA</option>
+                        <option value="luce">LUCE</option>
+                        <option value="porta">PORTA</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn btn-success mt-2" id="btnAggiungi">Aggiungi dispositivoS</button>
         </form>
+    </div>
+
+    <div class="container">
+        <h4>Storico Eventi</h4>
+        <table class="table-stripped" id="tabella">
+            <tr>
+                <td>#</td>
+                <td>Elenco accensione e spegnimenti</td>
+            </tr>
+
+        </table>
     </div>
 
     <script src="componenti.js"></script>
