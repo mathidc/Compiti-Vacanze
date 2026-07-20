@@ -1,4 +1,4 @@
-#header{
+.sfondo{
     background-color: blueviolet !important;
     color: white !important;
 }
@@ -12,4 +12,10 @@
 
 #sfondoParagrafo{
     background-color: rgb(255, 255, 143);
+}
+
+#linea{
+    width: 100%;
+    height: 3px;
+    background-color: white;
 }
