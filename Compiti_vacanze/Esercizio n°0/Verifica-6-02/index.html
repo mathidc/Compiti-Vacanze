@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="testa">
+    <h2 class="color-blue">Registro presenze</h2>
+    <p class="color-blue">Corso Aggiornamento per primo soccorso e BLS</p>
+    <button class="btn-header"><a href="#lavagna" id="a">Vai al registro Presenze</a></button>
+    </header>
+
+    <main>
+        <div id="lavagna">
+            <div class="profiloDoc">
+                <h2 class="color-brown">Profilo Docente</h2>
+                <img src="img/img1.png" alt="immagineProfilo" id="img">
+            </div>
+            <div class="contCaratteristiche">
+                <div class="proprieta">
+                    <p>Nome:</p>
+                    <p>Cognome:</p>
+                    <p>Classe:</p>
+                    <p>Data Nascita:</p>
+                </div>
+                <div>
+                    <p>Laura</p>
+                    <p>Rossi</p>
+                    <p>3E</p>
+                    <p>12/05/1990</p>
+                </div>
+            </div>
+        </div>
+        <div id="contenitorebtnAula">
+            <div class="contenitoreAula">
+                <h5 class="color-blue">Stato aula</h5>
+                <p class="color-blue" id="statoAula">Aula vuota</p>
+            </div>
+            <div class="contenitoreAula">
+                <h5>Registro Presenze</h5>
+                <h3 id="numPresenti">0</h3>
+                <div class="contenitorebtn">
+                    <button id="btnEntra">+ Entra</button>
+                    <button id="btnEsce">- Esce</button>
+                    <button id="btnReset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="piede">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.65%2C45.03%2C7.69%2C45.09&layer=mapnik" frameborder="0"></iframe>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

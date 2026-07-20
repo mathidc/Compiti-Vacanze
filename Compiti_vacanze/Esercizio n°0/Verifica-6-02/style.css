@@ -1,0 +1,135 @@
+body{
+    background-color: aliceblue;
+}
+
+.testa{
+    background: linear-gradient(90deg ,red, yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    margin: 30px;
+}
+
+.color-blue{
+    color: rgb(44, 44, 156);
+}
+
+.color-brown{
+    color: rgb(163, 127, 80);
+}
+
+#a{
+    text-decoration: none;
+}
+
+#img{
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    border: solid blue 3px;
+}
+
+.btn-header{
+    height: 40px;
+    width: 350px;
+    font-size: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-header:hover{
+    opacity: 0.4;
+}
+
+#lavagna{
+    background-color: rgb(228, 192, 102);
+    height: 200px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.profiloDoc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.contCaratteristiche{
+    width: 600px;
+    height: 150px;
+    display: flex;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.proprieta{
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+#contenitorebtnAula{
+    width: 800px;
+    display: flex;
+}
+
+.contenitoreAula{
+    width: 50%;
+    margin: 2px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contenitorebtn{
+    display: flex;
+}
+
+#btnEntra{
+    color: white;
+    background-color: green;
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#btnEsce{
+    color: white;
+    background-color: red;
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#btnReset{
+    color: white;
+    background-color: gray;
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#piede{
+    background: linear-gradient(90deg ,yellow, red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin: 30px;
+}

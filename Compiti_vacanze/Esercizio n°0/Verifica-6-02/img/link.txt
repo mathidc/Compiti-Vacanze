@@ -1,0 +1,1 @@
+https://www.openstreetmap.org/export/embed.html?bbox=7.65%2C45.03%2C7.69%2C45.09&layer=mapnik
