@@ -1,10 +1,15 @@
 body{
     background-color: aliceblue;
+    overflow-y: auto;
+    margin-bottom: 300px;
+
 }
 
 .testa{
     background: linear-gradient(90deg ,red, yellow);
     display: flex;
+    width: 100%;
+    left: 0;
     flex-direction: column;
     align-items: center;
     height: 250px;
@@ -126,10 +131,19 @@ body{
 }
 
 #piede{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
     background: linear-gradient(90deg ,yellow, red);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 250px;
     margin: 30px;
+}
+
+main{
+    width: 50%;
+    margin: 0 auto;
 }
