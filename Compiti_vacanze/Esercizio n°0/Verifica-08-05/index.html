@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark">
+    <h1 class="fw-bold text-white text-center">Spettacolo all'aperto</h1>
+    <p class="text-white text-center">clicca su un posto libero per prenotarlo</p>
+    <div id="campoPosti" class="container text-center"></div>
+    <div id="campobtn" class="d-none">
+        <form >
+            <label class="form-label">Nome</label>
+            <input type="text" id="inputNome" class="form-control w-25">
+            <label class="form-control">Cognome</label>
+            <input type="text" id="inputCognome" class="form-control w-25">
+            <div class="d-flex">
+                <button class="btn btn-danger" id="btnAnnulla">Annulla</button>
+                <button class="btn btn-success" id="btnConferma">Conferma</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
