@@ -1,0 +1,120 @@
+#header{
+    background: linear-gradient(90deg, whitesmoke, rgb(23, 125, 184));
+    box-shadow: 10px 2px 10px;
+    z-index: 999;
+    top: 0;
+    position: sticky;
+}
+
+
+.color-orange{
+    color: rgb(171, 53, 53);
+}
+
+#btnBiglietto{
+    color: white;
+    height: 40px;
+    background: linear-gradient(90deg ,red, orange);
+    border: none;
+    border-radius: 20px;
+    
+}
+
+#contMain{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+
+#containerImg{
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(255, 230, 181), rgb(227, 206, 148));
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 40px;
+}
+
+#immagini{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 220px);
+    gap: 15px;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: solid 2px rgb(206, 85, 37);
+    box-shadow: 5px 5px 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.foto:hover{
+    width: 210px;
+    height: 210px;
+    
+}
+
+#video{
+    width: 900px;
+    height: 500px;
+}
+
+#but{
+    background: linear-gradient(90deg ,red, orange);
+    border: none;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    border-radius: 15px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+    padding: 15px;
+    
+}
+
+#verifica{
+    background: linear-gradient(90deg ,red, orange);
+    border-radius: 15px;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+}
+
+#footer{
+    background: linear-gradient(90deg, whitesmoke, rgb(23, 125, 184));
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#linea{
+    width: 100%;
+    background-color: white;
+}
+
+#maps{
+    border-radius: 5px;
+    margin: 30px;
+}
+
+#contenitoreDomande{
+    width: 100%;
+    border: solid 3px orange;
+    border-radius: 10px;
+    background-color: white;
+    
+}
