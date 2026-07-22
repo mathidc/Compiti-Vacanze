@@ -46,15 +46,15 @@ window.onload = function(){
                         </div>
                         <div class="d-flex">
                             <p class="fw-bold">Stato: </p>
-                            <span class="badge bg-secondary">OFF</span>
+                            <span class="badge bg-secondary" id="span${i}">OFF</span>
                         </div>
                         <div class="d-flex">
                             <p class="fw-bold">Data: </p>
                             <p>${vet[i].data}</p>
                         </div>
 
-                        <button class="btn btn-outline-success" id="btnON${i}" value="${vet[i].nome}">ON</button>
-                        <button class="btn btn-outline-secondary" id="btnOFF${i}" value="${vet[i].nome}">OFF</button>
+                        <button class="btn btn-outline-success" id="btnON-${i}" value="${vet[i].nome}">ON</button>
+                        <button class="btn btn-outline-secondary" id="btnOFF-${i}" value="${vet[i].nome}">OFF</button>
                         <button class="btn btn-danger" id="${i}">X</button>
 
                     </div>
@@ -64,8 +64,8 @@ window.onload = function(){
         }
         for(let i = 0; i < vet.length;i++){
             let btnX = document.getElementById(i);
-            let btnON = document.getElementById("btnON" + i);
-            let btnOFF = document.getElementById("btnOFF" + i);
+            let btnON = document.getElementById("btnON-" + i);
+            let btnOFF = document.getElementById("btnOFF-" + i);
             btnX.addEventListener("click", eliminaCard);
             btnON.addEventListener("click", aggiornaStoricoEventi);
             btnOFF.addEventListener("click", aggiornaStoricoEventiS);
@@ -84,6 +84,10 @@ window.onload = function(){
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
         let td2 = document.createElement("td");
+        let qualcosa = this.id;
+        let v = qualcosa.split("-");
+        let id = v[1];
+        let span = document.getElementById("span" + id);
 
         
         tab.appendChild(tr);
@@ -91,7 +95,11 @@ window.onload = function(){
         td1.innerHTML = cont;
         cont++;
 
-        td2.innerHTML = this.value + " acceso"; 
+        td2.innerHTML = this.value + " acceso";
+
+        span.classList.remove("bg-secondary");
+        span.classList.add("bg-success");
+        span.innerHTML = "ON"
         
         tr.appendChild(td1);
         tr.appendChild(td2);
@@ -101,7 +109,15 @@ window.onload = function(){
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
         let td2 = document.createElement("td");
+        let qualcosa = this.id;
+        let v = qualcosa.split("-");
+        let id = v[1];
+        let span = document.getElementById("span" + id);
 
+        span.classList.remove("bg-success");
+        span.classList.add("bg-secondary");
+        
+        span.innerHTML = "OFF"
         
         tab.appendChild(tr);
 
@@ -112,6 +128,8 @@ window.onload = function(){
         
         tr.appendChild(td1);
         tr.appendChild(td2);
+
+        
     }
 }
 

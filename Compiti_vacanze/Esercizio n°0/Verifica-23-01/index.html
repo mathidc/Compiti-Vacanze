@@ -35,9 +35,17 @@
             
             <form>
                 <p>1. Qual è il simbolo ufficiale delle Olimpiadi?</p>
-                <label class="form-lable text-dark"><input type="radio" name="risposta" value="torcia" class="form-control w-75 m-3 text-center">Una torcia</label>
-                <label class="form-lable text-dark"><input type="radio" name="risposta" value="anelli" class="form-control w-75 m-3 text-center">Cinque anelli d'acciaio</label>
-                <label class="form-lable text-dark"><input type="radio" name="risposta" value="bandiera" class="form-control w-75 m-3 text-center">Una bandiera</label>
+                <label>
+                <input type="radio" name="risposta" value="torcia">Torcia
+                </label>
+                <br>
+                <label>
+                <input type="radio" name="risposta" value="anelli">Cinque anelli Intrecciati
+                </label>
+                <br>
+                <label>
+                <input type="radio" name="risposta" value="bandiera">Una Bandiera
+                </label>
             </form>
             <button id="verifica" onclick="verificaRisposta()">Verifica</button>
             <p id="paragrafo"></p>

@@ -6,6 +6,7 @@ let btnAnnulla = document.getElementById("btnAnnulla");
 let btnConferma = document.getElementById("btnConferma");
 let campobtn = document.getElementById("campobtn");
 let indAttuale = -1;
+let idattuale = "";
 
 
 window.onload = function() {
@@ -34,6 +35,7 @@ window.onload = function() {
 
     function modificaStato() {
         let id = this.id;
+        idattuale = this.id;
         let v = id.split("-");
         let vRiga = parseInt(v[0]);
         let vCol = parseInt(v[1]);
@@ -51,8 +53,11 @@ window.onload = function() {
     btnAnnulla.addEventListener("click", function(){
             campobtn.classList.add("d-none");
             vet[indAttuale].stato = "libero"
-            this.classList.add("bg-success");
-            this.classList.remove("bg-secondary");
+            let cella = document.getElementById(idattuale);
+            cella.classList.remove("bg-secondary");
+            cella.classList.add("bg-success");
+            
+            
         })
 
         btnConferma.addEventListener("click", function() {
@@ -60,5 +65,4 @@ window.onload = function() {
             vet[indAttuale].cognome = inputC.value;
             campobtn.classList.add("d-none");
         });
-        
 }

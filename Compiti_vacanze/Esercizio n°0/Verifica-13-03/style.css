@@ -1,0 +1,105 @@
+#navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    position: fixed;
+    box-shadow: 10px 10px 15px;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#over{
+    overflow-x:scroll;
+    overflow-y:scroll;
+}
+
+.sconto{
+    border: solid 2px orange;
+}
+
+#divcontainer{
+    padding-top: 128px;
+}
+
+
+.ruota-infinito {
+    width: 40px;
+    height: 20px;
+  animation: rotazione 2s linear infinite;
+}
+
+@keyframes rotazione {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#contArticoli{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin: 10px;
+}
+
+.card:hover{
+    animation: coloreOn 5s ease-in-out;
+}
+
+@keyframes coloreOn {
+    0%{
+        background-color: rgb(135, 237, 135);
+    }
+    25%{
+        background-color: rgb(78, 201, 78);
+    }
+    50%{
+        background-color:rgb(25, 154, 25)
+    }
+    100%{
+        background-color: green;
+    }
+}
+
+
+#carrello-msg{
+    border: 2px solid blue;
+    animation: scompare 3s ease-out infinite;
+}
+
+@keyframes scompare{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.blue{
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.orange{
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
