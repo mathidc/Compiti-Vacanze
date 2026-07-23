@@ -12,13 +12,22 @@
 
     <div class="container" class="bg-white">
         <div  class="row">
-            <div id="grigliaGioco" class="col-8"></div>
-            <div id="campoStatistiche" class="col-4">
-                <h3>Statistiche</h3>
-                <div></div>
-                <p>Tempo <p id="tempo"></p></p>
-                <p>Tentativi: <p></p></p>
+            <div id="grigliaGioco" class="col-9"></div>
+            <div class="col-3">
+                <div id="campoStatistiche" >
+                    <h3>Statistiche</h3>
+                    <div></div>
+                    <p>Tempo:  <span id="tempoMin"></span>:<span id="tempoSec"></span></p>
+                    <p>Tentativi: <span id="numTentativi">0</span></p>
+                    <p>Navi Rimaste: <span class="text-danger" id="numColpi"></span></p>
+                    
+                </div>
+                <button class="btn btn-primary" id="btnNuovaPartita">Nuova partita</button>
+                <p id="paragrafo"></p>
+                <p id="paragrafoTempo"></p>
             </div>
+            
+            
         </div>
     </div>
 
