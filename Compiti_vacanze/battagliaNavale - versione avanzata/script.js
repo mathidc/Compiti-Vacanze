@@ -217,8 +217,23 @@ window.onload = function () {
                 numColpi.innerHTML = naviColpite
                 if(naviColpite <= 0)
                 {
-                    par.innerHTML =     "Congratulazioni, hai abbattuto tutte le navi!!";
-                    idParTempo.innerHTML  = "Tentativi svolti: " + tentativi + " Tempo impiegato: " + min + ":" + sec;
+                    clearInterval(idTempo);
+                    if(min <= 1)
+                    {
+                        par.innerHTML = "Incredibile, hai abbattuto tutte le navi in meno di un minuto!!";
+                        idParTempo.innerHTML  = "Tentativi svolti: " + tentativi + " Tempo impiegato: " + min + ":" + sec;
+                    }
+                    else if(min <= 2)
+                    {
+                        par.innerHTML = "Congratulazioni, hai abbattuto tutte le navi in un ottimo ";
+                        idParTempo.innerHTML  = "Tentativi svolti: " + tentativi + " Tempo impiegato: " + min + ":" + sec;
+                    }
+                    else
+                    {
+                        par.innerHTML = "Ottimo hai abbattuto le navi. La prossima volta prova a battere una lumaca";
+                        idParTempo.innerHTML  = "Tentativi svolti: " + tentativi + " Tempo impiegato: " + min + ":" + sec + "a passo di lumaca😝😝";
+                    }
+                    
                 }
             }
         }
